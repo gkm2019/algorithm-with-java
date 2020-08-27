@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_최적경로 {
+public class Solution_1247_최적경로 {
 
 	static int T, N, ans;
 	static Pair company, house, customer[];

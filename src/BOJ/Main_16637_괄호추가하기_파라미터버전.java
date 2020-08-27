@@ -3,7 +3,7 @@ package BOJ;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main_괄호추가하기_파라미터버전 {
+public class Main_16637_괄호추가하기_파라미터버전 {
 
 	static int n, ans = Integer.MIN_VALUE;
 	static char[] opSelect;

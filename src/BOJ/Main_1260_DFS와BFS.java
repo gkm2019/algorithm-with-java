@@ -3,7 +3,7 @@ package BOJ;
 import java.util.*;
 import java.io.*;
 
-public class Main_1260 {
+public class Main_1260_DFS와BFS {
 
 	static int n, m, v;
 	static int map[][];

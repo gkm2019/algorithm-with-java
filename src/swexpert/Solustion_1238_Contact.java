@@ -3,7 +3,7 @@ package swexpert;
 import java.util.*;
 import java.io.*;
 
-public class Solustion_Contact {
+public class Solustion_1238_Contact {
 //ArrayList 버전의 BFS
 	static int SIZE=101;
 	static ArrayList<Integer>[] map;

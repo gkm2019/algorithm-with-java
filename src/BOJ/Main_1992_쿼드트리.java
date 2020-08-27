@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_쿼드트리 {
+public class Main_1992_쿼드트리 {
 
 	static int n;
 	static int[][] map;

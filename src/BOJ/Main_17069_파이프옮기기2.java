@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_파이프옮기기2 {
+public class Main_17069_파이프옮기기2 {
 
 	static int n, d;
 	static int[] dx = { 0, 1, 1 }, dy = { 1, 1, 0 }; // 가로,대각,아래

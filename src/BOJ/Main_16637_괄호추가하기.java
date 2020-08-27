@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_괄호추가하기 {
+public class Main_16637_괄호추가하기 {
 
 	static int n, ans=Integer.MIN_VALUE;
 	static char[] input, opSelect;

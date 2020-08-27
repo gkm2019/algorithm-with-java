@@ -2,7 +2,7 @@ package swexpert;
 
 import java.util.Scanner;
 
-public class Solution_달팽이 {
+public class Solution_1954_달팽이 {
 	static int[] di = { 0, 1, 0, -1 };// 0:right 1:down 2:left 3:up
 	static int[] dj = { 1, 0, -1, 0 };
 

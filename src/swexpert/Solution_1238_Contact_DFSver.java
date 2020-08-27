@@ -10,9 +10,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-import swexpert.Solustion_Contact.Pair;
+import swexpert.Solustion_1238_Contact.Pair;
 
-public class Solution_Contact_DFSver {
+public class Solution_1238_Contact_DFSver {
 
 	static int SIZE = 101;
 	static ArrayList<Integer>[] map;

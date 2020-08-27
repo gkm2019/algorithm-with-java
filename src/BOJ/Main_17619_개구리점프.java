@@ -4,7 +4,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Main_개구리점프 {
+public class Main_17619_개구리점프 {
 
 	static int N, Q;
 	static int[] p, rank;

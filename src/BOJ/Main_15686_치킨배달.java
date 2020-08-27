@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 import javax.crypto.Cipher;
 
-public class Main_치킨배달 {
+public class Main_15686_치킨배달 {
 
 	static int n, m, ans = Integer.MAX_VALUE;
 	static int[] select;

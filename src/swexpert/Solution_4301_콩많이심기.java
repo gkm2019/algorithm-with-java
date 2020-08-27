@@ -2,7 +2,7 @@ package swexpert;
 import java.util.*;
 import java.io.*;
 
-public class Solution_콩많이심기 {
+public class Solution_4301_콩많이심기 {
 
 	static int T,N,M;
 	static boolean[][] map;

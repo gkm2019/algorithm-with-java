@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_숨바꼭질5 {
+public class Main_17071_숨바꼭질5 {
 
 	static int n, k, size = 500050;
 	static boolean[][] visit;

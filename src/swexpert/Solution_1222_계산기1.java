@@ -3,7 +3,7 @@ package swexpert;
 import java.util.*;
 import java.io.*;
 
-public class Solution_계산기1 {
+public class Solution_1222_계산기1 {
 
 	static int len, numtop = -1;
 	static int numstack[];

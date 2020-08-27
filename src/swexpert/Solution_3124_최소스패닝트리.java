@@ -2,7 +2,7 @@ package swexpert;
 import java.util.*;
 import java.io.*;
 
-public class Solution_최소스패닝트리 {
+public class Solution_3124_최소스패닝트리 {
 
 	static int size=100001;
 	static int T,V,E;

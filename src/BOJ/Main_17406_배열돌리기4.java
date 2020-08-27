@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_배열돌리기4 {
+public class Main_17406_배열돌리기4 {
 
 	static int N, M, K, r, c, s,ans=Integer.MAX_VALUE;
 	static int[][] map,originMap;

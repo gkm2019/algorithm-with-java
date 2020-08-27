@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_다음순열_permutation버전 {
+public class Main_10972_다음순열_permutation버전 {
 
 	static int n;
 	static int[] input;

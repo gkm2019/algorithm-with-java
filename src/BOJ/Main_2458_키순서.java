@@ -3,7 +3,7 @@ package BOJ;
 import java.util.*;
 import java.io.*;
 
-public class Main_키순서 {
+public class Main_2458_키순서 {
 	//bfs 버전
 	static int T, N, M, cnt, ansCnt;
 	static ArrayList<Integer>[] down, up;

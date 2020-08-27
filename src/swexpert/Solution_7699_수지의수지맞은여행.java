@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_수지의수지맞은여행 {
+public class Solution_7699_수지의수지맞은여행 {
 
 	static int T, R, C, ans;
 	static int[] dx = { -1, 1, 0, 0 }, dy = { 0, 0, -1, 1 };

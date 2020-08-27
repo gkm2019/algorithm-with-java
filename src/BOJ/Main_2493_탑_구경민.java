@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class hwalgo0730_탑_구경민 {
+public class Main_2493_탑_구경민 {
 
 	static int n,top=-1;
 	static int[] stack, arr, ret;

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main_파이프옮기기1_dfs {
+public class Main_17070_파이프옮기기1_dfs {
 	static int n, d, ans;
 	static int[] dx = { 0, 1, 1 }, dy = { 1, 1, 0 }; // 가로,대각,아래
 	static int[][] map;

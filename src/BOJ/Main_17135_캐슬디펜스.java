@@ -2,7 +2,7 @@ package BOJ;
 import java.util.*;
 import java.io.*;
 
-public class Main_캐슬디펜스 {
+public class Main_17135_캐슬디펜스 {
 
 	static int N,M,D,cnt,ans=Integer.MIN_VALUE;
 	static int[][] map;

@@ -3,7 +3,7 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-public class hwalgo0806_2961_구경민 {
+public class Main_2961_구경민 {
 
 	static int cnt;
 	static int N;

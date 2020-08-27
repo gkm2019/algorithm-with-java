@@ -5,7 +5,7 @@ import javax.sound.midi.SysexMessage;
 
 import java.io.*;
 
-public class Solution_서로소집합 {
+public class Solution_3289_서로소집합 {
 
 	static int T,n,m,ans;
 	static int[] root;
