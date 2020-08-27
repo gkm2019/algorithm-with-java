@@ -9,7 +9,7 @@
 
 ## 목록
 
-- [백준](boj.kr)
+- [백준](https://www.acmicpc.net/)
 - [Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
 - [SW expert](https://swexpertacademy.com/main/code/problem/problemList.do)
 
