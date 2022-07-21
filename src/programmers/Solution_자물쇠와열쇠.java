@@ -1,9 +1,7 @@
 package programmers;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Solution_자물쇠와열쇠 {
 	static int tmpKey[][], tmpLock[][]; // tmpKey는 key 회전 저장용, tmpLock은 확장형 복구를 위한 lock 저장
