@@ -13,6 +13,19 @@ public class 베스트앨범 {
         System.out.println(ans.length);
     }
 
+    static class AlbumDTO {
+        int index;
+        String genre;
+        int play;
+        int total;
+
+        public AlbumDTO(int index, String genre, int play, int total) {
+            this.index=index;
+            this.genre=genre;
+            this.play=play;
+            this.total=total;
+        }
+    }
     class Solution {
         public static int[] solution(String[] genres, int[] plays) {
             int[] answer = {};
