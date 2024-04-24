@@ -1,76 +1,94 @@
 package programmers;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class 베스트앨범 {
     public static void main(String[] args) {
 
-        String[] genres = {"classic", "pop", "classic", "classic", "pop"};
-        int[] plays = {500, 600, 150, 800, 2500};
+        String s = "1100";
+        int n = s.length();
 
-        int[] ans = Solution.solution(genres, plays);
+//        int n = 3;
+//        int[] arr = {1, 1, 0, 0};
+//        int[] output = new int[n];
+//        boolean[] visited = new boolean[n];
 
+        boolean[] visited = new boolean[n];
+        char[] arr = new char[n];
+        char[] output = new char[n];
+
+        String countOne = "";
+        String countZero = "";
+
+        //make result
+        for(int i = 0; i < s.length(); i++) {
+            char now = s.charAt(i);
+            arr[i] = now;
+
+            if('1' == now) {
+                countOne += "1";
+            } else if('0' == now) {
+                countZero += "0";
+            }
+        }
+
+        String resultB = countOne + countZero;
+//        permutation(arr, result, visited, 0, s.length(), s.length(), resultB);
+
+        String answer = "";
+        perm(arr, output, visited, 0, n, n, resultB, answer);
+        System.out.println();
     }
 
-    public static class AlbumDTO {
-        int total;
-        List<Integer> indexList;
+    // 사전순으로 순열 구하기
+    // 사용 예시: perm(arr, output, visited, 0, n, 3);
+    static void perm(char[] arr, char[] output, boolean[] visited, int depth, int n, int r, String resultB, String answer) {
+        String out = new String(output);
+        if(answer.equals(out)) return;
 
-        public AlbumDTO(int total, List<Integer> indexList) {
-            this.total=total;
-            this.indexList=indexList;
+        if (depth == r) {
+            print(output, r);
+            String b = calculation(arr, output);
+            if(resultB.equals(b)) {
+                answer = new String(output);
+
+                System.out.println("answer(output) : " + answer);
+                System.out.println("b :" + b);
+                return;
+            }
+            return;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (visited[i] != true) {
+                visited[i] = true;
+                output[depth] = arr[i];
+                perm(arr, output, visited, depth + 1, n, r, resultB, answer);
+                visited[i] = false;
+            }
         }
     }
 
-    class Solution {
-        public static int[] solution(String[] genres, int[] plays) {
-            List<Integer> answer = new ArrayList<>();
-            Map<String, AlbumDTO> map = new HashMap<>();
+    public static String calculation(char[] arr, char[] result) {
+        String b = "";
 
-            //map 가공
-            for(int i=0; i<genres.length; i++) {
-                int total = plays[i];
-                String key = genres[i];
+        for(int i = 1; i <= result.length; i++) {
+            b += result[i-1];
+            StringBuffer sb = new StringBuffer(b);
+            String reverseB = sb.reverse().toString();
 
-                if(map.containsKey(key)) {
-                    AlbumDTO dto = map.get(key);
-                    dto.total += total;
-                    dto.indexList.add(i);
-                    map.put(key, dto);
-                } else {
-                    List<Integer> list = new ArrayList<>();
-                    list.add(i);
-                    map.put(key, new AlbumDTO(total, list));
-                }
-            }
-
-            //total: 장르 정렬
-            List<Map.Entry<String, AlbumDTO>> result = new LinkedList<>(map.entrySet());
-            Collections.sort(result, new Comparator<Map.Entry<String, AlbumDTO>>() {
-                @Override
-                public int compare(Map.Entry<String, AlbumDTO> o1, Map.Entry<String, AlbumDTO> o2) {
-                    if(o1.getValue().total <= o2.getValue().total) return 1;
-                    else return -1;
-                }
-            });
-
-            //장르 내의 재생 노래 정렬 answer 채우기
-            for(Map.Entry<String, AlbumDTO> entry : result) {
-                int maxIndex = 0;
-                //개별 플레이 횟수 정렬
-                Collections.sort(entry.getValue().indexList, new Comparator<Integer>() {
-                    @Override
-                    public int compare(Integer o1, Integer o2) {
-                        if(plays[o1] < plays[o2]) return 1;
-                        return -1;
-                    }
-                });
-
-                answer.add(entry.getValue().indexList.get(0));
-                answer.add(entry.getValue().indexList.get(1));
-            }
-
-            return answer.stream().mapToInt(i->i).toArray();
+            b = reverseB;
         }
+
+        return b;
+    }
+
+    // 배열 출력
+    static void print(char[] arr, int r) {
+        for (int i = 0; i < r; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+
     }
 }
